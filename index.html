@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Мой первый сайт</title>
+  <meta name="description" content="Пример простого бесплатного сайта" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Привет! Это мой первый сайт</h1>
+    <p>Сделан на Windows 11 и опубликован бесплатно.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>О сайте</h2>
+      <p>Немного текста. Добавьте свои картинки и контент.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> — Мой сайт</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
