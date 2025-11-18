@@ -1,4 +1,3 @@
-> JS:
 body { 
     font-family: Arial, sans-serif; 
     max-width: 900px; 
@@ -21,4 +20,10 @@ footer {
     margin-top: 40px; 
     color: #666; 
     font-size: 14px; 
+}
+
+.responsive-img {
+    width: 100%; /* Занимает всю доступную ширину контейнера */
+    height: auto; /* Автоматически подстраивает высоту для сохранения пропорций */
+    max-width: 600px; /* Максимальный размер изображения */
 }
