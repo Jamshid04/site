@@ -1,1 +1,38 @@
-body { font-family: Arial; }
+body { 
+  font-family: Arial, sans-serif; 
+  max-width: 900px; 
+  margin: 30px auto; 
+  padding: 0 20px; 
+  line-height: 1.6; 
+}
+header { 
+  text-align: center; 
+  margin-bottom: 20px; 
+}
+h1 { 
+  margin: 0 0 8px 0; 
+}
+footer { 
+  text-align: center; 
+  margin-top: 40px; 
+  color: #666; 
+  font-size: 14px; 
+}
+
+/* Стили для галереи */
+.gallery {
+  display: flex;
+  gap: 10px;       /* расстояние между картинками */
+  justify-content: center;
+  flex-wrap: wrap;  /* перенос картинок на следующую строку при маленьком экране */
+}
+.gallery img {
+  width: 250px;     /* ширина каждой картинки */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+.gallery img:hover {
+  transform: scale(1.05); /* эффект при наведении */
+}

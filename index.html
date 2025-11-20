@@ -3,22 +3,168 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Строительная компания — Строительство, аренда складов, продажа материалов</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Строительная компания — Строительство, Аренда, Материалы</title>
+  <meta name="description" content="Строительство под ключ, аренда складов, продажа стройматериалов — профессиональные услуги для бизнеса." />
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: #333;
+      background: #f8f9fb;
+      line-height: 1.7;
+    }
+
+    /* HERO */
+    header {
+      background: linear-gradient(to bottom right, #003a70, #0077c8);
+      padding: 80px 20px;
+      text-align: center;
+      color: #fff;
+    }
+    header h1 {
+      font-size: 46px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    header p {
+      font-size: 20px;
+      opacity: 0.9;
+    }
+
+    /* NAV */
+    nav {
+      background: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 14px 25px;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #003a70;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #0077c8;
+    }
+
+    /* SECTIONS */
+    .section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section h2 {
+      font-size: 34px;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #003a70;
+    }
+
+    /* SERVICES GRID */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.35s, box-shadow 0.35s;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 20px 24px;
+    }
+    .card-content h3 {
+      margin-top: 0;
+      color: #003a70;
+      font-size: 22px;
+    }
+
+    /* CALL TO ACTION */
+    .cta {
+      background: #003a70;
+      color: #fff;
+      text-align: center;
+      padding: 70px 20px;
+      border-radius: 0;
+    }
+    .cta h2 {
+      color: #fff;
+      font-size: 36px;
+    }
+    .cta p { font-size: 18px; opacity: 0.9; }
+    .cta button {
+      margin-top: 20px;
+      background: #ffb400;
+      border: none;
+      padding: 16px 32px;
+      border-radius: 10px;
+      font-size: 20px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+      color: #003a70;
+    }
+    .cta button:hover { background: #ffcf4d; }
+
+    /* FOOTER */
+    footer {
+      background: #002744;
+      color: #cbd6e2;
+      text-align: center;
+      padding: 25px;
+      margin-top: 50px;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Строительная компания</h1>
-    <p>Строительство зданий • Аренда складов • Продажа стройматериалов</p>
-  </header>
 
-  <main>
-    <section>
-      <h2>Наши услуги</h2>
-      <img src="images/build.png" alt="">
-      <img src="images/warehouse.png" alt="">
-      <img src="images/materials.png" alt="">
-    </section>
-  </main>
-</body>
-</html>
+<header>
+  <h1>Строительная компания</h1>
+  <p>Строительство под ключ • Склады в аренду • Продажа строительных материалов</p>
+</header>
+
+<nav>
+  <a href="#services">Услуги</a>
+  <a href="#rent">Склады</a>
+  <a href="#materials">Материалы</a>
+  <a href="#contacts">Контакты</a>
+</nav>
+
+<section id="services" class="section">
+  <h2>Наши ключевые направления</h2>
+  <div class="services">
+
+    <div class="card">
+      <img src="images/build.png" alt="Строительство">
+      <div class="card-content">
+        <h3>Строительство под ключ</h3>
+        <p>Проектирование, строительство, сдача объекта — полный цикл под ваши задачи.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/warehouse.png" alt="Аренда складов">
+      <div class="card-content">
+        <h3>Аренда складских помещений</h3>
+        <p>Склады от 50 до 2000 м². Охрана, отопление, удобные подъездные пути.</p>
+      </div>
+    </div>
